@@ -1,0 +1,159 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h3>Leads by Agent</h3>
+		<table border="01" style="font-family: arial, sans-serif; border-collapse: collapse; width: 90%; margin-bottom: 30px;">
+			<tr>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Agent Name</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Total</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Unique</th>
+			</tr>
+			{% for x in range(0,sizeAgents)%}
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{varAgentLeads[x][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{varAgentLeads[x][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{varAgentLeads[x][2]}}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		<br>
+		<h3>Top Destinations by Leads</h3>
+		<table border="01" style="font-family: arial, sans-serif; border-collapse: collapse; width: 90%; margin-bottom: 30px;">
+			<tr>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Destination Name</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Total Leads</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Unique Leads</th>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[0][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[0][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[0][2]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[1][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[1][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[1][2]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[2][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[2][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[2][2]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[3][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[3][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[3][2]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[4][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[4][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{leadsDestination[4][2]}}</td>
+			</tr>
+		</table>
+		<br>
+		<h3>Top Platforms by Leads</h3>
+		<table border="1" style="font-family: arial, sans-serif; border-collapse: collapse; width: 90%; margin-bottom: 30px;">
+			<tr>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Platform</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Number of Leads</th>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[0][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[0][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[1][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[1][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[2][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[2][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[3][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[3][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[4][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[4][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[5][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{platformLeadsList[5][1]}}</td>
+			</tr>
+		</table>
+		<br>
+		<h3>Top Pages by Leads</h3>
+		<table border="1" style="font-family: arial, sans-serif; border-collapse: collapse; width: 90%; margin-bottom: 30px;">
+			<tr>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Page Name</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Total Leads</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Unique Leads</th>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[0][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[0][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList[0][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[1][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[1][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList[1][1]}}</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[2][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[2][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList[2][1]}}</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[3][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[3][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList[3][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[4][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList[4][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList[4][1]}}</td>
+			</tr>
+		</table>
+		<br>
+		<h3>Top Buttons by Leads</h3>
+		<table border="1" style="font-family: arial, sans-serif; border-collapse: collapse; width: 90%; margin-bottom: 30px;">
+			<tr>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Button Name</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Total Leads</th>
+				<th style="background-color: rgb(255,229,153); border: 1px solid #dddddd; text-align: left; padding: 8px;">Unique Leads</th>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[0][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[0][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList_button[0][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[1][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[1][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList_button[1][1]}}</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[2][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[2][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList_button[2][1]}}</td>
+			</tr>
+
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[3][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[3][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList_button[3][1]}}</td>
+			</tr>
+			<tr>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[4][0]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{totalLeadsList_button[4][1]}}</td>
+				<td style="border: 1px solid #dddddd; text-align: left; padding: 8px;">{{uniqueLeadsList_button[4][1]}}</td>
+			</tr>
+		</table>
+	</body>
+</html>
